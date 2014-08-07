@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
@@ -16,45 +17,45 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
-		<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/superslides.css" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/plugins/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/font-awesome.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/plugins/owl-carousel/owl.carousel.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/plugins/owl-carousel/owl.theme.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/plugins/owl-carousel/owl.transitions.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/plugins/magnific-popup/magnific-popup.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/animate.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/superslides.css" %}" rel="stylesheet" type="text/css" />
 
 		<!-- REALESTATE -->
-		<link href="assets/css/realestate.css" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/realestate.css" %}" rel="stylesheet" type="text/css" />
 
 		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout-responsive.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/orange.css" rel="stylesheet" type="text/css" /><!-- orange: default style -->
-		<!--<link id="css_dark_skin" href="assets/css/layout-dark.css" rel="stylesheet" type="text/css" />--><!-- DARK SKIN -->
+		<link href="{% static "listing/css/essentials.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/layout.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/layout-responsive.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/color_scheme/orange.css" %}" rel="stylesheet" type="text/css" /><!-- orange: default style -->
+		<!--<link id="css_dark_skin" href="{% static "listing/css/layout-dark.css" %}" rel="stylesheet" type="text/css" />--><!-- DARK SKIN -->
 
 		<!-- styleswitcher - demo only -->
-		<link href="assets/css/color_scheme/orange.css" rel="alternate stylesheet" type="text/css" title="orange" />
-		<link href="assets/css/color_scheme/red.css" rel="alternate stylesheet" type="text/css" title="red" />
-		<link href="assets/css/color_scheme/pink.css" rel="alternate stylesheet" type="text/css" title="pink" />
-		<link href="assets/css/color_scheme/yellow.css" rel="alternate stylesheet" type="text/css" title="yellow" />
-		<link href="assets/css/color_scheme/darkgreen.css" rel="alternate stylesheet" type="text/css" title="darkgreen" />
-		<link href="assets/css/color_scheme/green.css" rel="alternate stylesheet" type="text/css" title="green" />
-		<link href="assets/css/color_scheme/darkblue.css" rel="alternate stylesheet" type="text/css" title="darkblue" />
-		<link href="assets/css/color_scheme/blue.css" rel="alternate stylesheet" type="text/css" title="blue" />
-		<link href="assets/css/color_scheme/brown.css" rel="alternate stylesheet" type="text/css" title="brown" />
-		<link href="assets/css/color_scheme/lightgrey.css" rel="alternate stylesheet" type="text/css" title="lightgrey" />
+		<link href="{% static "listing/css/color_scheme/orange.css" %}" rel="alternate stylesheet" type="text/css" title="orange" />
+		<link href="{% static "listing/css/color_scheme/red.css" %}" rel="alternate stylesheet" type="text/css" title="red" />
+		<link href="{% static "listing/css/color_scheme/pink.css" %}" rel="alternate stylesheet" type="text/css" title="pink" />
+		<link href="{% static "listing/css/color_scheme/yellow.css" %}" rel="alternate stylesheet" type="text/css" title="yellow" />
+		<link href="{% static "listing/css/color_scheme/darkgreen.css" %}" rel="alternate stylesheet" type="text/css" title="darkgreen" />
+		<link href="{% static "listing/css/color_scheme/green.css" %}" rel="alternate stylesheet" type="text/css" title="green" />
+		<link href="{% static "listing/css/color_scheme/darkblue.css" %}" rel="alternate stylesheet" type="text/css" title="darkblue" />
+		<link href="{% static "listing/css/color_scheme/blue.css" %}" rel="alternate stylesheet" type="text/css" title="blue" />
+		<link href="{% static "listing/css/color_scheme/brown.css" %}" rel="alternate stylesheet" type="text/css" title="brown" />
+		<link href="{% static "listing/css/color_scheme/lightgrey.css" %}" rel="alternate stylesheet" type="text/css" title="lightgrey" />
 		<!-- /styleswitcher - demo only -->
 		
 		<!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
-		<link href="assets/plugins/styleswitcher/styleswitcher.css" rel="stylesheet" type="text/css" />		
+		<link href="{% static "listing/plugins/styleswitcher/styleswitcher.css" %}" rel="stylesheet" type="text/css" />		
 
 		<!-- Morenizr -->
-		<script type="text/javascript" src="assets/plugins/modernizr.min.js"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/modernizr.min.js" %}"></script>
 	</head>
-	<body><!-- Available classes for body: boxed , pattern1...pattern10 . Background Image - example add: data-background="assets/images/boxed_background/1.jpg"  -->
+    <body><!-- Available classes for body: boxed , pattern1...pattern10 . Background Image - example add: data-background="{% static "listing/images/boxed_background/1.jpg" %}" %}"  -->
 
 		<!-- TOP NAV -->
 		<header id="topNav">
@@ -67,7 +68,7 @@
 
 				<!-- Logo text or image -->
 				<a class="logo" href="index.html">
-					<img src="assets/images/logo.png" alt="Atropos" />
+					<img src="{% static "listing/images/logo.png" %}" alt="Atropos" />
 				</a>
 
 				<!-- Top Nav -->
@@ -355,16 +356,16 @@
 
 				<p>10 Predefined Color Schemes</p>
 				<ul>            
-					<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="orange" class="color"><img src="assets/images/demo/color_schemes/1.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="red" class="color"><img src="assets/images/demo/color_schemes/2.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('pink'); return false;" title="pink" class="color"><img src="assets/images/demo/color_schemes/3.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="yellow" class="color"><img src="assets/images/demo/color_schemes/4.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('darkgreen'); return false;" title="darkgreen" class="color"><img src="assets/images/demo/color_schemes/5.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="green" class="color"><img src="assets/images/demo/color_schemes/6.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('darkblue'); return false;" title="darkblue" class="color"><img src="assets/images/demo/color_schemes/7.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="blue" class="color"><img src="assets/images/demo/color_schemes/8.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('brown'); return false;" title="brown" class="color"><img src="assets/images/demo/color_schemes/9.png" alt="" width="30" height="30" /></a></li>
-					<li><a href="#" onclick="setActiveStyleSheet('lightgrey'); return false;" title="lightgrey" class="color"><img src="assets/images/demo/color_schemes/10.png" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('orange'); return false;" title="orange" class="color"><img src="{% static "listing/images/demo/color_schemes/1.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="red" class="color"><img src="{% static "listing/images/demo/color_schemes/2.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('pink'); return false;" title="pink" class="color"><img src="{% static "listing/images/demo/color_schemes/3.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="yellow" class="color"><img src="{% static "listing/images/demo/color_schemes/4.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('darkgreen'); return false;" title="darkgreen" class="color"><img src="{% static "listing/images/demo/color_schemes/5.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="green" class="color"><img src="{% static "listing/images/demo/color_schemes/6.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('darkblue'); return false;" title="darkblue" class="color"><img src="{% static "listing/images/demo/color_schemes/7.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="blue" class="color"><img src="{% static "listing/images/demo/color_schemes/8.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('brown'); return false;" title="brown" class="color"><img src="{% static "listing/images/demo/color_schemes/9.png" %}" alt="" width="30" height="30" /></a></li>
+					<li><a href="#" onclick="setActiveStyleSheet('lightgrey'); return false;" title="lightgrey" class="color"><img src="{% static "listing/images/demo/color_schemes/10.png" %}" alt="" width="30" height="30" /></a></li>
 				</ul>        
 
 				<p>CHOOSE YOUR COLOR SKIN</p>
@@ -380,27 +381,27 @@
 
 				<p>Patterns for Boxed Version</p>
 				<div>
-					<button onclick="pattern_switch('none');" class="pointer switcher_thumb"><img src="assets/images/patterns/none.jpg" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern2');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern2.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern3');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern3.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern4');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern4.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern5');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern5.png" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('none');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/none.jpg" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern2');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern2.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern3');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern3.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern4');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern4.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern5');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern5.png" %}" width="27" height="27" alt="" /></button>
 				</div>
 
 				<div>
-					<button onclick="pattern_switch('pattern6');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern6.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern7');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern7.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern8');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern8.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern9');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern9.png" width="27" height="27" alt="" /></button>
-					<button onclick="pattern_switch('pattern10');" class="pointer switcher_thumb"><img src="assets/images/patterns/pattern10.png" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern6');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern6.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern7');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern7.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern8');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern8.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern9');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern9.png" %}" width="27" height="27" alt="" /></button>
+					<button onclick="pattern_switch('pattern10');" class="pointer switcher_thumb"><img src="{% static "listing/images/patterns/pattern10.png" %}" width="27" height="27" alt="" /></button>
 				</div>
 
 				<p>Images for Boxed Version</p>
-				<button onclick="background_switch('none');" class="pointer switcher_thumb"><img src="assets/images/boxed_background/none.jpg" width="27" height="27" alt="" /></button>
-				<button onclick="background_switch('assets/images/boxed_background/1.jpg');" class="pointer switcher_thumb"><img src="assets/images/boxed_background/1_thumb.jpg" width="27" height="27" alt="" /></button>
-				<button onclick="background_switch('assets/images/boxed_background/2.jpg');" class="pointer switcher_thumb"><img src="assets/images/boxed_background/2_thumb.jpg" width="27" height="27" alt="" /></button>
-				<button onclick="background_switch('assets/images/boxed_background/3.jpg');" class="pointer switcher_thumb"><img src="assets/images/boxed_background/3_thumb.jpg" width="27" height="27" alt="" /></button>
-				<button onclick="background_switch('assets/images/boxed_background/4.jpg');" class="pointer switcher_thumb"><img src="assets/images/boxed_background/4_thumb.jpg" width="27" height="27" alt="" /></button>
+				<button onclick="background_switch('none');" class="pointer switcher_thumb"><img src="{% static "listing/images/boxed_background/none.jpg" %}" width="27" height="27" alt="" /></button>
+                <button onclick="background_switch('{% static "listing/images/boxed_background/1.jpg" %}" %}');" class="pointer switcher_thumb"><img src="{% static "listing/images/boxed_background/1_thumb.jpg" %}" width="27" height="27" alt="" /></button>
+                <button onclick="background_switch('{% static "listing/images/boxed_background/2.jpg" %}" %}');" class="pointer switcher_thumb"><img src="{% static "listing/images/boxed_background/2_thumb.jpg" %}" width="27" height="27" alt="" /></button>
+                <button onclick="background_switch('{% static "listing/images/boxed_background/3.jpg" %}" %}');" class="pointer switcher_thumb"><img src="{% static "listing/images/boxed_background/3_thumb.jpg" %}" width="27" height="27" alt="" /></button>
+                <button onclick="background_switch('{% static "listing/images/boxed_background/4.jpg" %}" %}');" class="pointer switcher_thumb"><img src="{% static "listing/images/boxed_background/4_thumb.jpg" %}" width="27" height="27" alt="" /></button>
 
 				<hr />
 
@@ -459,10 +460,10 @@
 								<!-- carousel -->
 								<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
 									<div>
-										<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/4.jpg" />
+										<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/4.jpg" %}" />
 									</div>
 									<div>
-										<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/5.jpg" />
+										<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/5.jpg" %}" />
 									</div>
 								</div>
 								<!-- /carousel -->
@@ -523,7 +524,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/1.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
@@ -579,7 +580,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/noimg.png" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/noimg.png" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">700 Front Street, Key West, FL</a></h4>
@@ -607,7 +608,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/4.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/4.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
@@ -635,7 +636,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/6.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/6.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">700 Front Street, Key West, FL</a></h4>
@@ -681,7 +682,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/7.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/7.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
@@ -709,7 +710,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/8.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/8.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
@@ -737,7 +738,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/1.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
@@ -765,7 +766,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/2.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/2.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
@@ -793,7 +794,7 @@
 						<!-- article summary -->
 						<div class="row">
 							<div class="col-md-4 text-center">
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/3.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/3.jpg" %}" />
 							</div>
 							<div class="col-md-8">
 								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
@@ -988,7 +989,7 @@
 										<strong>VEW</strong> OFFER
 									</span>
 								</a>
-								<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/1.jpg" />
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
 							</figure>
 							<div class="item-box-desc">
 								<h4 class="wrap"><a class="styleColor" href="#">1903 Hollywood Blvd, FL</a></h4>
@@ -1008,13 +1009,13 @@
 						<div class="row">
 							<div class="col-xs-6 col-md-6">
 								<a href="#">
-									<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/3.jpg" />
+									<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/3.jpg" %}" />
 									<h6 class="fsize12 font300 padding6 styleSecondColor">Horses hypnotized by the sea</h6>
 								</a>							
 							</div>
 							<div class="col-xs-6 col-md-6">
 								<a href="#">
-									<img alt="" class="img-responsive" src="assets/images/demo/realestate/images/thumb/4.jpg" />
+									<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/4.jpg" %}" />
 									<h6 class="fsize12 font300 padding6 styleSecondColor">Sochi protesters fight to be heard</h6>
 								</a>							
 							</div>
@@ -1116,7 +1117,7 @@
 						<!-- FOOTER LOGO -->
 						<div class="column logo col-md-4 text-center">
 							<div class="logo-content">
-								<img class="animate_fade_in" src="assets/images/logo_footer.png" width="200" alt="" />
+								<img class="animate_fade_in" src="{% static "listing/images/logo_footer.png" %}" width="200" alt="" />
 								<h4>ATROPOS TEMPLATE</h4>
 							</div>											
 						</div>
@@ -1157,25 +1158,25 @@
 
 
 		<!-- JAVASCRIPT FILES -->
-		<script type="text/javascript" src="assets/plugins/jquery-2.0.3.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="assets/plugins/jquery.cookie.js"></script>
-		<script type="text/javascript" src="assets/plugins/jquery.appear.js"></script>
-		<script type="text/javascript" src="assets/plugins/jquery.isotope.js"></script>
-		<script type="text/javascript" src="assets/plugins/masonry.js"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery-2.0.3.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery.easing.1.3.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery.cookie.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery.appear.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery.isotope.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/masonry.js" %}"></script>
 
-		<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/stellar/jquery.stellar.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/knob/js/jquery.knob.js"></script>
-		<script type="text/javascript" src="assets/plugins/jquery.backstretch.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/superslides/dist/jquery.superslides.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/styleswitcher/styleswitcher.js"></script><!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
-		<script type="text/javascript" src="assets/plugins/mediaelement/build/mediaelement-and-player.min.js"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/bootstrap/js/bootstrap.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/magnific-popup/jquery.magnific-popup.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/owl-carousel/owl.carousel.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/stellar/jquery.stellar.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/knob/js/jquery.knob.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/jquery.backstretch.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/superslides/dist/jquery.superslides.min.js" %}"></script>
+		<script type="text/javascript" src="{% static "listing/plugins/styleswitcher/styleswitcher.js" %}"></script><!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
+		<script type="text/javascript" src="{% static "listing/plugins/mediaelement/build/mediaelement-and-player.min.js" %}"></script>
 		
 
-		<script type="text/javascript" src="assets/js/scripts.js"></script>
+		<script type="text/javascript" src="{% static "listing/js/scripts.js" %}"></script>
 
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
