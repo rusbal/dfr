@@ -131,7 +131,7 @@ INSTALLED_APPS = (
     'wagtail.wagtailredirects',
     'wagtail.wagtailforms',
 
-    # 'listing',
+    'listing',
 )
 
 EMAIL_SUBJECT_PREFIX = '[Don Forrest Realty] '
