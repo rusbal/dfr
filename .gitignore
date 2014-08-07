@@ -1,0 +1,10 @@
+/.vagrant
+/dfr/settings/local.py
+/static
+*.pyc
+/media
+/Vagrantfile.local
+/.git.OLD
+*.swp
+dfr/settings/secrets
+/wagtail
