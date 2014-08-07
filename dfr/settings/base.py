@@ -105,7 +105,7 @@ TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
 ROOT_URLCONF = 'dfr.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'wagtaildemo.wsgi.application'
+WSGI_APPLICATION = 'dfr.wsgi.application'
 
 INSTALLED_APPS = (
     'django.contrib.auth',
