@@ -1,0 +1,8 @@
+.grayed {
+    color: lightgray;
+    font-weight: normal; 
+}
+header#topNav a.logo {
+    font-size: 30px !important;
+    line-height: 60px;
+}
