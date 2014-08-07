@@ -102,7 +102,7 @@ TEMPLATE_CONTEXT_PROCESSORS = global_settings.TEMPLATE_CONTEXT_PROCESSORS + (
     'django.core.context_processors.request',
 )
 
-ROOT_URLCONF = 'myproject.urls'
+ROOT_URLCONF = 'dfr.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'wagtaildemo.wsgi.application'
@@ -201,3 +201,7 @@ WAGTAILADMIN_NOTIFICATION_FROM_EMAIL = 'raymond@philippinedev.com'
 # If you want to use Embedly for embeds, supply a key
 # (this key doesn't work, get your own!)
 # EMBEDLY_KEY = '253e433d59dc4d2xa266e9e0de0cb830'
+
+SOUTH_MIGRATION_MODULES = {
+   'taggit': 'taggit.south_migrations',
+}
