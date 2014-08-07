@@ -8,3 +8,4 @@
 *.swp
 dfr/settings/secrets
 /wagtail
+.ropeproject/
