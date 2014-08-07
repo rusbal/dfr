@@ -1,4 +1,5 @@
 {% load static %}
+{% load wagtailimages_tags %}
 <!DOCTYPE html>
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
@@ -31,6 +32,7 @@
 
 		<!-- THEME CSS -->		<link href="{% static "listing/css/essentials.css" %}" rel="stylesheet" type="text/css" />
 		<link href="{% static "listing/css/layout.css" %}" rel="stylesheet" type="text/css" />
+		<link href="{% static "listing/css/donforrestrealty.css" %}" rel="stylesheet" type="text/css" />
 		<link href="{% static "listing/css/layout-responsive.css" %}" rel="stylesheet" type="text/css" />
 		<link href="{% static "listing/css/color_scheme/orange.css" %}" rel="stylesheet" type="text/css" /><!-- orange: default style -->
 		<!--<link id="css_dark_skin" href="{% static "listing/css/layout-dark.css" %}" rel="stylesheet" type="text/css" />--><!-- DARK SKIN -->
@@ -66,8 +68,9 @@
 				</button>
 
 				<!-- Logo text or image -->
-				<a class="logo" href="index.html">
-					<img src="{% static "listing/images/logo.png" %}" alt="Atropos" />
+				<a class="logo" href="/">
+					<!-- <img src="{% static "listing/images/logo.png" %}" alt="Atropos" />\ -->
+                    DonForrest<span class="grayed">Realty</span>
 				</a>
 
 				<!-- Top Nav -->
@@ -431,7 +434,7 @@
 
 				<ul class="slides-container">
 
-					<!-- Item 1 -->
+                {% for img in self.images.all %}
 					<li>
 						<div class="image-caption">
 							<div class="inner text-left"><!-- text center , text-left or text-right -->
@@ -461,69 +464,12 @@
 						</div>
 
 						<!--<span class="overlay"></span>-->
-                        <div style="background-image: url('{% static "listing/images/demo/realestate/1.jpg" %}" %}');" class="fullscreen-img"></div>
+                        <!-- <div style="background&#45;image: url('{% static "listing/images/demo/realestate/2.jpg" %}" %}');" class="fullscreen&#45;img"></div>\ -->
+                        {% image img.image original as tmp_photo %}
+                        <div style="background-image: url('{{ tmp_photo.url }}');" class="fullscreen-img"></div>
 					</li>
 
-					<!-- Item 2 -->
-					<li>
-						<div class="image-caption">
-							<div class="inner text-left"><!-- text center , text-left or text-right -->
-								<div class="block">
-                                    <h2>{{ self.title }}</h2>
-								</div>
-								<div class="block realestate-caption">
-									<h4>700 Front Street, Key West, FL</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-									</p>
-									<span class="price">
-
-										$625,000
-
-										<!-- view more button -->
-										<a href="realestate-single.html" class="btn btn-default btn-xs view-more pull-right">VIEW MORE</a>
-										<span class="clearfix"></span>
-										<!-- /view more button -->
-
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<!--<span class="overlay"></span>-->
-                        <div style="background-image: url('{% static "listing/images/demo/realestate/2.jpg" %}" %}');" class="fullscreen-img"></div>
-					</li>
-
-					<!-- Item 3 -->
-					<li>
-						<div class="image-caption">
-							<div class="inner text-left"><!-- text center , text-left or text-right -->
-								<div class="block">
-                                    <h2>{{ self.title }}</h2>
-								</div>
-								<div class="block realestate-caption">
-									<h4>1903 Hollywood Blvd, Hollywood, FL</h4>
-									<p>
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam.
-									</p>
-									<span class="price">
-
-										$625,000
-
-										<!-- view more button -->
-										<a href="realestate-single.html" class="btn btn-default btn-xs view-more pull-right">VIEW MORE</a>
-										<span class="clearfix"></span>
-										<!-- /view more button -->
-
-									</span>
-								</div>
-							</div>
-						</div>
-
-						<!--<span class="overlay"></span>-->
-                        <div style="background-image: url('{% static "listing/images/demo/realestate/3.jpg" %}" %}');" class="fullscreen-img"></div>
-					</li>
-
+              {% endfor %}
 				</ul>
 
 			</section>
