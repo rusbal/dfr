@@ -1,0 +1,157 @@
+{% load static %}
+{% load wagtailimages_tags %}
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<title>Don Forrest Realty</title>
+		<meta name="keywords" content="HTML5,CSS3,Template" />
+		<meta name="description" content="" />
+		<meta name="Author" content="Raymond Usbal [www.philippinedev.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+        {% include "listing/_css.html" %}
+
+		<!-- Morenizr -->
+		<script type="text/javascript" src="{% static "listing/plugins/modernizr.min.js" %}"></script>
+	</head>
+    <body><!-- Available classes for body: boxed , pattern1...pattern10 . Background Image - example add: data-background="{% static "listing/images/boxed_background/1.jpg" %}" %}"  -->
+
+		<!-- TOP NAV -->
+		<header id="topNav">
+			<div class="container">
+
+				<!-- Mobile Menu Button -->
+				<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<!-- Logo text or image -->
+				<a class="logo" href="/">DonForrest<span class="grayed">Realty</span></a>
+
+				<!-- Top Nav -->
+				<div class="navbar-collapse nav-main-collapse collapse pull-right">
+                    {% include "listing/_nav.html" %}
+				</div>
+				<!-- /Top Nav -->
+
+			</div>
+		</header>
+
+		<span id="header_shadow"></span>
+		<!-- /TOP NAV -->
+
+
+
+		<!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
+        {# include "listing/_switcher.html" #}
+		<!-- /STYLESWITCHER -->
+
+
+
+		<!-- WRAPPER -->
+        <div id="wrapper">
+            {% block wrapcontent %}
+                [PUT WRAPPED CONTENT HERE]
+            {% endblock %}
+        </div>
+		<!-- /WRAPPER -->
+
+
+
+		<!-- FOOTER -->
+		<footer>
+
+			<!-- copyright , scrollTo Top -->
+			<div class="footer-bar">
+				<div class="container">
+					<span class="copyright">Copyright &copy; Your Company, LLC . All Rights Reserved.</span>
+					<a class="toTop" href="#topNav">BACK TO TOP <i class="fa fa-arrow-circle-up"></i></a>
+				</div>
+			</div>
+			<!-- copyright , scrollTo Top -->
+
+
+			<!-- footer content -->
+			<div class="footer-content">
+				<div class="container">
+
+					<div class="row">
+
+
+						<!-- FOOTER CONTACT INFO -->
+						<div class="column col-md-4">
+							<h3>CONTACT</h3>
+
+							<p class="contact-desc">
+								Atropos is a very powerful HTML5 template, you will be able to create an awesome website in a very simple way.										
+							</p>
+							<address class="font-opensans">
+								<ul>
+									<li class="footer-sprite address">
+										PO Box 21132<br />
+										Here Weare St, Melbourne<br />
+										Vivas 2355 Australia<br />
+									</li>
+									<li class="footer-sprite phone">
+										Phone: 1-800-565-2390
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">support@yourname.com</a>
+									</li>
+								</ul>
+							</address>
+
+						</div>
+						<!-- /FOOTER CONTACT INFO -->
+
+
+						<!-- FOOTER LOGO -->
+						<div class="column logo col-md-4 text-center">
+							<div class="logo-content">
+								<img class="animate_fade_in" src="{% static "listing/images/logo_footer.png" %}" width="200" alt="" />
+								<h4>ATROPOS TEMPLATE</h4>
+							</div>											
+						</div>
+						<!-- /FOOTER LOGO -->
+
+
+						<!-- FOOTER LATEST POSTS -->
+						<div class="column col-md-4 text-right">
+							<h3>RECENT POSTS</h3>
+
+							<div class="post-item">
+								<small>JANUARY 2, 2014 BY ADMIN</small>
+								<h3><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+							</div>
+							<div class="post-item">
+								<small>JANUARY 2, 2014 BY ADMIN</small>
+								<h3><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+							</div>
+							<div class="post-item">
+								<small>JANUARY 2, 2014 BY ADMIN</small>
+								<h3><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a></h3>
+							</div>
+
+							<a href="blog-masonry-sidebar.html" class="view-more pull-right">View Blog <i class="fa fa-arrow-right"></i></a>
+
+						</div>
+						<!-- /FOOTER LATEST POSTS -->
+
+					</div>
+
+				</div>
+			</div>
+			<!-- footer content -->
+
+		</footer>
+		<!-- /FOOTER --> 
+
+        {% include "listing/_js.html" %}
+
+	</body>
+</html> 

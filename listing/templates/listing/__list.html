@@ -1,0 +1,645 @@
+{% extends "listing/__base.html" %}
+{% load static %}
+
+{% block wrapcontent %}
+			<section class="container top-no-header">
+				<div class="row">
+
+					<!-- center column -->
+					<div class="col-md-9">
+
+						<!-- CATEGORY TITLE -->
+						<h3 class="page-header nomargin-top">
+							<strong class="styleColor">Properties</strong> Result
+						</h3>
+
+
+						<!-- BREAKING NEWS -->
+						<div class="label label-primary breaknews-ticker">
+							<strong>LAST HOUR OFFER:</strong> 
+
+							<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"autoPlay":4000, "stopOnHover":true, "items": 1, "singleItem": true, "navigation": false, "pagination": false, "transitionStyle":"fadeUp"}'>
+								<div>
+									<a href="realestate-single.html">$325/mo 700 Front Street, Key West, FL</a>
+								</div>
+								<div>
+									<a href="realestate-single.html">$750.000 1903 Hollywood Blvd, Hollywood, FL</a>
+								</div>
+								<div>
+									<a href="realestate-single.html">$122/mo 401 Biscayne Boulevard, Miami</a>
+								</div>
+							</div>
+							
+						</div><br />
+						<!-- /BREAKING NEWS -->
+
+
+
+						<!-- FEATURED -->
+						<div class="row">
+							<div class="col-md-6">
+								<!-- carousel -->
+								<div class="owl-carousel controlls-over nomargin" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp", "itemsScaleUp":true}'>
+									<div>
+										<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/4.jpg" %}" />
+									</div>
+									<div>
+										<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/5.jpg" %}" />
+									</div>
+								</div>
+								<!-- /carousel -->
+
+							</div>
+							<div class="col-md-6">
+								<h2><a class="styleColor" href="realestate-single.html">1200 Anastasia Ave Coral</a></h2>
+								<small class="block styleSecondColor fsize20">$350.000</small>
+								<p>Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm.</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+								<a href="realestate-single.html" class="btn btn-default">READ MORE</a>
+							</div>
+						</div>
+						<!-- /FEATURED -->
+
+
+
+						<hr class="half-margins" /><!-- separator -->
+
+
+
+						<!-- PAGINATION -->
+						<div class="row">
+
+							<div class="col-md-6 text-left responsive-text-center">
+								<p class="hidden-xs pull-left nomargin padding30"><strong>Showing</strong> 1-10 of 38 results.</p>
+							</div>
+
+							<div class="col-md-6 text-right">
+								<ul class="pagination">
+									<li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- /PAGINATION -->
+
+
+
+						<hr class="half-margins" /><!-- separator -->
+
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<iframe src="http://player.vimeo.com/video/73221098" width="800" height="450"></iframe>
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/noimg.png" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">700 Front Street, Key West, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/4.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/6.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">700 Front Street, Key West, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<!-- CALLOUT -->
+						<div class="row bs-callout">
+							<div class="col-md-8 text-center">
+								<h3 class="padding20">Subscribe <strong>now</strong> and get the <strong>latest</strong> news.</h3>
+							</div>
+							<div class="col-md-4">
+
+								<p class="nomargin">Type your best E-mail Address</p>
+
+								<form method="get" action="#" class="input-group">
+									<input type="text" class="form-control" name="k" id="k" value="" placeholder="E-mail Address" />
+									<span class="input-group-btn">
+										<button class="btn btn-primary"><i class="fa fa-search"></i></button>
+									</span>
+								</form>
+
+							</div>
+						</div>
+						<!-- /CALLOUT -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/7.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+						
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/8.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+												
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+						
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/2.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">27523 Pacific Coast</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+
+						<hr class="half-margins" /><!-- separator -->
+
+
+						<!-- article summary -->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/3.jpg" %}" />
+							</div>
+							<div class="col-md-8">
+								<h4><a class="styleColor" href="realestate-single.html">1903 Hollywood Blvd, Hollywood, FL</a></h4>
+								<p>
+									<small class="block styleSecondColor fsize17">$350.000</small>
+									Dramatic pictures are released showing the destruction wrought by a huge boulder that smashed through a farm in northern Italy after being dislodged by a landslide.
+								</p>
+								<p>
+									<span class="fsize12 pull-right">
+										<i class="bed-ico" title="beds"></i> 3 , 
+										<i class="garage-ico" title="garage"></i> 1 , 
+										<i class="furnished-ico" title="furnished"></i>
+									</span>
+
+									<i class="home-ico"></i> 300m<sup>2</sup>
+								</p>
+							</div>
+						</div>
+						<!-- /article summary -->
+
+
+						<hr /><!-- final separator -->
+
+
+						<!-- PAGINATION -->
+						<div class="row">
+
+							<div class="col-md-6 text-left">
+								<p class="hidden-xs pull-left nomargin padding20">Showing 1-10 of 38 results.</p>
+							</div>
+
+							<div class="col-md-6 responsive-text-center text-right">
+								<ul class="pagination">
+									<li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- /PAGINATION -->
+
+
+					</div>
+
+					<!-- side column -->
+					<div class="col-md-3">
+
+
+
+						<form id="re-filter" action="realestate-list.html" method="get" class="white-row">
+
+							<!-- FILTER / SEARCH -->
+							<h3 class="page-header nomargin-top margin-bottom40">
+								Find <strong class="styleColor">Your Home</strong>
+							</h3>
+
+							<div class="row">
+								<div class="form-group">
+
+									<div class="col-md-12 col-sm-6">
+										<label>Property ID</label>
+										<input type="text" class="form-control" name="re_id" />
+									</div>
+
+									<div class="col-md-12 col-sm-6">
+										<label>Location</label>
+										<select class="form-control" name="re_location">
+											<option value="0">Any</option>
+											<option value="1">New York</option>
+											<option value="2">Los Angeles</option>
+											<option value="3">Las Vegas</option>
+											<option value="4">Palo Alto, SA</option>
+											<option value="5">Silcon Valey, SA</option>
+										</select>
+									</div>
+									<div class="col-md-12 col-sm-6">
+										<label>Type</label>
+										<select class="form-control" name="re_type">
+											<option value="0">Any</option>
+											<option value="1">Apartment</option>
+											<option value="2">Villa</option>
+											<option value="3">Family House</option>
+											<option value="4">Condo</option>
+											<option value="5">Cottage</option>
+											<option value="6">Building Area</option>
+											<option value="7">Single Home</option>
+										</select>
+									</div>
+									<div class="col-md-12 col-sm-6">
+										<label>Property Status</label>
+										<select class="form-control" name="re_status">
+											<option value="0">Any</option>
+											<option value="1">Rent</option>
+											<option value="2">Sale</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="form-group">
+
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<label>Beds</label>
+										<select class="form-control" name="re_beds">
+											<option value="0">Any</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10+">10+</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<label>Baths</label>
+										<select class="form-control" name="re_baths">
+											<option value="0">Any</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10+">10+</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<label>Price From</label>
+										<select class="form-control" name="re_price_from">
+											<option value="0">Any</option>
+											<option value="1000">$1000</option>
+											<option value="2000">$2000</option>
+											<option value="3000">$3000</option>
+											<option value="5000">$5000</option>
+											<option value="10000">$10000</option>
+											<option value="2000">$2000</option>
+											<option value="100000">$100000</option>
+											<option value="300000">$300000</option>
+											<option value="1000000+">1000000+</option>
+										</select>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<label>Price To</label>
+										<select class="form-control" name="re_price_to">
+											<option value="0">Any</option>
+											<option value="1000">$1000</option>
+											<option value="2000">$2000</option>
+											<option value="3000">$3000</option>
+											<option value="5000">$5000</option>
+											<option value="10000">$10000</option>
+											<option value="2000">$2000</option>
+											<option value="100000">$100000</option>
+											<option value="300000">$300000</option>
+											<option value="1000000+">1000000+</option>
+										</select>
+									</div>
+
+									<div class="col-md-12">
+										<label>&nbsp;</label>
+										<button class="btn btn-primary fullwidth">FILTER NOW</button>
+									</div>
+								</div>
+							</div>
+
+						</form>
+
+						<!-- HOT -->
+						<h3 class="page-header">
+							Today's <strong class="styleColor">Hot</strong>
+						</h3>
+
+						<!-- No #1 Hot -->
+						<div class="item-box nomargin-top">
+							<figure>
+								<a class="item-hover" href="realestate-single.html">
+									<span class="overlay color2"></span>
+									<span class="inner">
+										<span class="block fa fa-plus fsize20"></span>
+										<strong>VEW</strong> OFFER
+									</span>
+								</a>
+								<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/1.jpg" %}" />
+							</figure>
+							<div class="item-box-desc">
+								<h4 class="wrap"><a class="styleColor" href="#">1903 Hollywood Blvd, FL</a></h4>
+								<small class="font300 text-center block">~ $112.000 ~</small>
+							</div>
+						</div>
+						<!-- /No #1 Hot -->
+
+						<!-- video -->
+						<iframe src="http://player.vimeo.com/video/73221098" width="800" height="450"></iframe>
+						<h5 class="font300 padding10">
+							<small class="text-center block">(3287 views last 3 days)</small>
+						</h5>
+						<!-- /video -->
+
+						<!-- small articles -->
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<a href="#">
+									<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/3.jpg" %}" />
+									<h6 class="fsize12 font300 padding6 styleSecondColor">Horses hypnotized by the sea</h6>
+								</a>							
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<a href="#">
+									<img alt="" class="img-responsive" src="{% static "listing/images/demo/realestate/images/thumb/4.jpg" %}" />
+									<h6 class="fsize12 font300 padding6 styleSecondColor">Sochi protesters fight to be heard</h6>
+								</a>							
+							</div>
+						</div>
+						<!-- /small articles -->
+
+
+
+						<!-- TWEETS -->
+						<h3 class="page-header">
+							<i class="fa fa-twitter"></i> 
+							Latest <strong class="styleColor">Tweets</strong> 
+						</h3>
+
+						<p>
+							<a href="#">@tweetuser</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+							<small class="block styleColor">12 hours ago</small>
+						</p>
+						<p>
+							<a href="#">@tweetuser</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+							<small class="block styleColor">12 hours ago</small>
+						</p>
+						<p>
+							<a href="#">@tweetuser</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+							<small class="block styleColor">12 hours ago</small>
+						</p>
+
+						<!-- SOCIALS -->
+						<h3 class="page-header">
+							<i class="fa fa-twitter"></i> 
+							<strong class="styleColor">Follow</strong> Us
+						</h3>
+
+						<a href="#" class="social fa fa-facebook"></a>
+						<a href="#" class="social fa fa-twitter"></a>
+						<a href="#" class="social fa fa-google-plus"></a>
+						<a href="#" class="social fa fa-linkedin"></a>
+						<a href="#" class="social fa fa-pinterest"></a>
+						<a href="#" class="social fa fa-flickr"></a>
+
+					</div>
+
+				</div>
+
+			</section> 
+{% endblock %}
